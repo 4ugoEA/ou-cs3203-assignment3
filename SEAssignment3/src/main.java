@@ -14,8 +14,8 @@ public class main {
 		input.close();
 		
 		System.out.println("Sum of Array: " + ArraySum(t));
-		
 		System.out.println("Product of Array: " + ArrayProd(t));
+		System.out.println("Reverse Array: " + ReverseArray(t).toString());
 
 	}
 	
@@ -38,5 +38,16 @@ public class main {
 		
 		return result;
 	}
+	
+	public static ArrayList<Integer> ReverseArray(ArrayList<Integer> t) {
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		
+		for(int i = t.size() - 1; i >= 0; i--) {
+			result.add(t.get(i));
+		}
+		
+		return result;
+	}
+	
 
 }
