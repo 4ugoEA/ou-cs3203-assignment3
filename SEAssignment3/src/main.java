@@ -15,7 +15,7 @@ public class main {
 		
 		System.out.println("Sum of Array: " + ArraySum(t));
 		System.out.println("Product of Array: " + ArrayProd(t));
-		
+		System.out.println("Reverse Array: " + ReverseArray(t).toString());
 
 	}
 	
