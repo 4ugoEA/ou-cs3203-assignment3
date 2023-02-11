@@ -1,30 +1,39 @@
+import java.util.Scanner;
+import java.util.ArrayList;
 
 public class main {
 
 	public static void main(String[] args) {
-		int[] t = {1, 2, 3, 4, 5};
+		Scanner input = new Scanner(System.in);
+		ArrayList<Integer> t = new ArrayList<Integer>();
+		System.out.print("Enter integers, enter a non-integer when done: ");
 		
-		System.out.println(ArraySum(t));
+		while(input.hasNextInt()) {
+			t.add(input.nextInt());
+		}
+		input.close();
 		
-		System.out.println(ArrayProd(t));
+		System.out.println("Sum of Array: " + ArraySum(t));
+		
+		System.out.println("Product of Array: " + ArrayProd(t));
 
 	}
 	
-	public static int ArraySum(int[] a) {
+	public static int ArraySum(ArrayList<Integer> t) {
 		int result = 0;
 		
-		for(int i = 0; i < a.length; i++) {
-			result += a[i];
+		for(int i = 0; i < t.size(); i++) {
+			result += t.get(i);
 		}
 		
 		return result;
 	}
 	
-	public static int ArrayProd(int[] a) {
+	public static int ArrayProd(ArrayList<Integer> t) {
 		int result = 1;
 		
-		for(int i = 0; i < a.length; i++) {
-			result *= a[i];
+		for(int i = 0; i < t.size(); i++) {
+			result *= t.get(i);
 		}
 		
 		return result;
