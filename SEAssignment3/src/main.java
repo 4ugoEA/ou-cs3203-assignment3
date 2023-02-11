@@ -15,13 +15,13 @@ public class main {
 		
 		System.out.println("Sum of Array: " + ArraySum(t));
 		System.out.println("Product of Array: " + ArrayProd(t));
-<<<<<<< Upstream, based on origin/master
+//<<<<<<< Upstream, based on origin/master
 		System.out.println("Reverse Array: " + ReverseArray(t).toString());
-=======
+//=======
 		
 		//Checkedout Commit #3, created new branch part10
 		//Reformated some lines
->>>>>>> e950e6d part10 commit, added some comments, adjusted some line spacing
+//>>>>>>> e950e6d part10 commit, added some comments, adjusted some line spacing
 
 	}
 	
@@ -41,7 +41,7 @@ public class main {
 		}
 		return result;
 	}
-<<<<<<< Upstream, based on origin/master
+//<<<<<<< Upstream, based on origin/master
 	
 	public static ArrayList<Integer> ReverseArray(ArrayList<Integer> t) {
 		ArrayList<Integer> result = new ArrayList<Integer>();
@@ -54,6 +54,6 @@ public class main {
 	}
 	
 
-=======
->>>>>>> e950e6d part10 commit, added some comments, adjusted some line spacing
+//=======
+//>>>>>>> e950e6d part10 commit, added some comments, adjusted some line spacing
 }
